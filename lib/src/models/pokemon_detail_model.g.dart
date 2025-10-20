@@ -8,18 +8,16 @@ part of 'pokemon_detail_model.dart';
 
 _$PokemonDetailImpl _$$PokemonDetailImplFromJson(Map<String, dynamic> json) =>
     _$PokemonDetailImpl(
-      id: (json['id'] as num).toInt(),
+      id: json['id'] as int,
       name: json['name'] as String,
-      height: (json['height'] as num).toInt(),
-      weight: (json['weight'] as num).toInt(),
+      height: json['height'] as int,
+      weight: json['weight'] as int,
       types: const TypeListConverter().fromJson(json['types'] as List),
-      abilities: const AbilityListConverter().fromJson(
-        json['abilities'] as List,
-      ),
+      abilities:
+          const AbilityListConverter().fromJson(json['abilities'] as List),
       stats: const StatsConverter().fromJson(json['stats'] as List),
-      imageUrl: const SpriteUrlConverter().fromJson(
-        json['sprites'] as Map<String, dynamic>,
-      ),
+      imageUrl: const SpriteUrlConverter()
+          .fromJson(json['sprites'] as Map<String, dynamic>),
     );
 
 Map<String, dynamic> _$$PokemonDetailImplToJson(_$PokemonDetailImpl instance) =>
@@ -35,26 +33,34 @@ Map<String, dynamic> _$$PokemonDetailImplToJson(_$PokemonDetailImpl instance) =>
     };
 
 _$PokemonTypeImpl _$$PokemonTypeImplFromJson(Map<String, dynamic> json) =>
-    _$PokemonTypeImpl(name: json['name'] as String);
+    _$PokemonTypeImpl(
+      name: json['name'] as String,
+    );
 
 Map<String, dynamic> _$$PokemonTypeImplToJson(_$PokemonTypeImpl instance) =>
-    <String, dynamic>{'name': instance.name};
+    <String, dynamic>{
+      'name': instance.name,
+    };
 
 _$PokemonAbilityImpl _$$PokemonAbilityImplFromJson(Map<String, dynamic> json) =>
-    _$PokemonAbilityImpl(name: json['name'] as String);
+    _$PokemonAbilityImpl(
+      name: json['name'] as String,
+    );
 
 Map<String, dynamic> _$$PokemonAbilityImplToJson(
-  _$PokemonAbilityImpl instance,
-) => <String, dynamic>{'name': instance.name};
+        _$PokemonAbilityImpl instance) =>
+    <String, dynamic>{
+      'name': instance.name,
+    };
 
 _$PokemonStatsImpl _$$PokemonStatsImplFromJson(Map<String, dynamic> json) =>
     _$PokemonStatsImpl(
-      hp: (json['hp'] as num).toInt(),
-      attack: (json['attack'] as num).toInt(),
-      defense: (json['defense'] as num).toInt(),
-      specialAttack: (json['specialAttack'] as num).toInt(),
-      specialDefense: (json['specialDefense'] as num).toInt(),
-      speed: (json['speed'] as num).toInt(),
+      hp: json['hp'] as int,
+      attack: json['attack'] as int,
+      defense: json['defense'] as int,
+      specialAttack: json['specialAttack'] as int,
+      specialDefense: json['specialDefense'] as int,
+      speed: json['speed'] as int,
     );
 
 Map<String, dynamic> _$$PokemonStatsImplToJson(_$PokemonStatsImpl instance) =>

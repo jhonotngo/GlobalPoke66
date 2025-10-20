@@ -28,15 +28,14 @@ String _$pokemonRepositoryHash() => r'5e9236c5ac441d5dd849968da38fc5353736ade4';
 @ProviderFor(pokemonRepository)
 final pokemonRepositoryProvider =
     AutoDisposeProvider<PokemonRepository>.internal(
-      pokemonRepository,
-      name: r'pokemonRepositoryProvider',
-      debugGetCreateSourceHash:
-          const bool.fromEnvironment('dart.vm.product')
-              ? null
-              : _$pokemonRepositoryHash,
-      dependencies: null,
-      allTransitiveDependencies: null,
-    );
+  pokemonRepository,
+  name: r'pokemonRepositoryProvider',
+  debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
+      ? null
+      : _$pokemonRepositoryHash,
+  dependencies: null,
+  allTransitiveDependencies: null,
+);
 
 @Deprecated('Will be removed in 3.0. Use Ref instead')
 // ignore: unused_element

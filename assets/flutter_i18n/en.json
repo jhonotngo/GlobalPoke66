@@ -69,5 +69,13 @@
         "dark": "Dark",
         "steel": "Steel",
         "fairy": "Fairy"
+    },
+    "widgets": {
+        "filter_type_bottom_modal": {
+            "title": "Filter by your preferences",
+            "type": "Type",
+            "apply": "Apply",
+            "cancel": "Cancel"
+        }
     }
 }

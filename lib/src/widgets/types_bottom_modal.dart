@@ -50,7 +50,10 @@ class _PokemonFilterModalState extends State<TypesBottomModal> {
               ),
               Center(
                 child: Text(
-                  'Filtrar por tus preferencias',
+                  FlutterI18n.translate(
+                    context,
+                    'widgets.filter_type_bottom_modal.title',
+                  ),
                   style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                 ),
               ),
@@ -78,7 +81,10 @@ class _PokemonFilterModalState extends State<TypesBottomModal> {
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Text(
-                                  'Tipo',
+                                  FlutterI18n.translate(
+                                    context,
+                                    'widgets.filter_type_bottom_modal.type',
+                                  ),
                                   style: TextStyle(
                                     fontSize: 16,
                                     fontWeight: FontWeight.w600,
@@ -172,7 +178,10 @@ class _PokemonFilterModalState extends State<TypesBottomModal> {
                       ),
                     ),
                     child: Text(
-                      'Aplicar',
+                      FlutterI18n.translate(
+                        context,
+                        'widgets.filter_type_bottom_modal.apply',
+                      ),
                       style: TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.bold,
@@ -199,7 +208,10 @@ class _PokemonFilterModalState extends State<TypesBottomModal> {
                       ),
                     ),
                     child: Text(
-                      'Cancelar',
+                      FlutterI18n.translate(
+                        context,
+                        'widgets.filter_type_bottom_modal.cancel',
+                      ),
                       style: TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.bold,

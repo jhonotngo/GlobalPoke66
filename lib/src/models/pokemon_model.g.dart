@@ -10,10 +10,9 @@ _$PokemonImpl _$$PokemonImplFromJson(Map<String, dynamic> json) =>
     _$PokemonImpl(
       name: json['name'] as String,
       url: json['url'] as String,
-      details:
-          json['details'] == null
-              ? null
-              : PokemonDetail.fromJson(json['details'] as Map<String, dynamic>),
+      details: json['details'] == null
+          ? null
+          : PokemonDetail.fromJson(json['details'] as Map<String, dynamic>),
     );
 
 Map<String, dynamic> _$$PokemonImplToJson(_$PokemonImpl instance) =>
@@ -24,20 +23,19 @@ Map<String, dynamic> _$$PokemonImplToJson(_$PokemonImpl instance) =>
     };
 
 _$PokemonResponseImpl _$$PokemonResponseImplFromJson(
-  Map<String, dynamic> json,
-) => _$PokemonResponseImpl(
-  results:
-      (json['results'] as List<dynamic>)
+        Map<String, dynamic> json) =>
+    _$PokemonResponseImpl(
+      results: (json['results'] as List<dynamic>)
           .map((e) => Pokemon.fromJson(e as Map<String, dynamic>))
           .toList(),
-  next: json['next'] as String?,
-  previous: json['previous'] as String?,
-);
+      next: json['next'] as String?,
+      previous: json['previous'] as String?,
+    );
 
 Map<String, dynamic> _$$PokemonResponseImplToJson(
-  _$PokemonResponseImpl instance,
-) => <String, dynamic>{
-  'results': instance.results,
-  'next': instance.next,
-  'previous': instance.previous,
-};
+        _$PokemonResponseImpl instance) =>
+    <String, dynamic>{
+      'results': instance.results,
+      'next': instance.next,
+      'previous': instance.previous,
+    };

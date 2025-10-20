@@ -14,6 +14,7 @@ class PokemonDetail with _$PokemonDetail {
     @TypeListConverter() required List<PokemonType> types,
     @AbilityListConverter() required List<PokemonAbility> abilities,
     @StatsConverter() required PokemonStats stats,
+    // ignore: invalid_annotation_target
     @JsonKey(name: 'sprites') @SpriteUrlConverter() required String imageUrl,
   }) = _PokemonDetail;
 

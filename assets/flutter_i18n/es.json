@@ -69,5 +69,13 @@
         "dark": "Siniestro",
         "steel": "Acero",
         "fairy": "Hada"
+    },
+    "widgets": {
+        "filter_type_bottom_modal": {
+            "title": "Filtrar por tus preferencias",
+            "type": "Tipo",
+            "apply": "Aplicar",
+            "cancel": "Cancelar"
+        }
     }
 }

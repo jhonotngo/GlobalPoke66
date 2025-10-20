@@ -12,8 +12,7 @@ part of 'pokemon_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
-);
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 Pokemon _$PokemonFromJson(Map<String, dynamic> json) {
   return _Pokemon.fromJson(json);
@@ -63,26 +62,20 @@ class _$PokemonCopyWithImpl<$Res, $Val extends Pokemon>
     Object? url = null,
     Object? details = freezed,
   }) {
-    return _then(
-      _value.copyWith(
-            name:
-                null == name
-                    ? _value.name
-                    : name // ignore: cast_nullable_to_non_nullable
-                        as String,
-            url:
-                null == url
-                    ? _value.url
-                    : url // ignore: cast_nullable_to_non_nullable
-                        as String,
-            details:
-                freezed == details
-                    ? _value.details
-                    : details // ignore: cast_nullable_to_non_nullable
-                        as PokemonDetail?,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      name: null == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      url: null == url
+          ? _value.url
+          : url // ignore: cast_nullable_to_non_nullable
+              as String,
+      details: freezed == details
+          ? _value.details
+          : details // ignore: cast_nullable_to_non_nullable
+              as PokemonDetail?,
+    ) as $Val);
   }
 
   /// Create a copy of Pokemon
@@ -103,9 +96,8 @@ class _$PokemonCopyWithImpl<$Res, $Val extends Pokemon>
 /// @nodoc
 abstract class _$$PokemonImplCopyWith<$Res> implements $PokemonCopyWith<$Res> {
   factory _$$PokemonImplCopyWith(
-    _$PokemonImpl value,
-    $Res Function(_$PokemonImpl) then,
-  ) = __$$PokemonImplCopyWithImpl<$Res>;
+          _$PokemonImpl value, $Res Function(_$PokemonImpl) then) =
+      __$$PokemonImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({String name, String url, PokemonDetail? details});
@@ -119,9 +111,8 @@ class __$$PokemonImplCopyWithImpl<$Res>
     extends _$PokemonCopyWithImpl<$Res, _$PokemonImpl>
     implements _$$PokemonImplCopyWith<$Res> {
   __$$PokemonImplCopyWithImpl(
-    _$PokemonImpl _value,
-    $Res Function(_$PokemonImpl) _then,
-  ) : super(_value, _then);
+      _$PokemonImpl _value, $Res Function(_$PokemonImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of Pokemon
   /// with the given fields replaced by the non-null parameter values.
@@ -132,25 +123,20 @@ class __$$PokemonImplCopyWithImpl<$Res>
     Object? url = null,
     Object? details = freezed,
   }) {
-    return _then(
-      _$PokemonImpl(
-        name:
-            null == name
-                ? _value.name
-                : name // ignore: cast_nullable_to_non_nullable
-                    as String,
-        url:
-            null == url
-                ? _value.url
-                : url // ignore: cast_nullable_to_non_nullable
-                    as String,
-        details:
-            freezed == details
-                ? _value.details
-                : details // ignore: cast_nullable_to_non_nullable
-                    as PokemonDetail?,
-      ),
-    );
+    return _then(_$PokemonImpl(
+      name: null == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      url: null == url
+          ? _value.url
+          : url // ignore: cast_nullable_to_non_nullable
+              as String,
+      details: freezed == details
+          ? _value.details
+          : details // ignore: cast_nullable_to_non_nullable
+              as PokemonDetail?,
+    ));
   }
 }
 
@@ -158,7 +144,7 @@ class __$$PokemonImplCopyWithImpl<$Res>
 @JsonSerializable()
 class _$PokemonImpl extends _Pokemon {
   const _$PokemonImpl({required this.name, required this.url, this.details})
-    : super._();
+      : super._();
 
   factory _$PokemonImpl.fromJson(Map<String, dynamic> json) =>
       _$$PokemonImplFromJson(json);
@@ -199,16 +185,17 @@ class _$PokemonImpl extends _Pokemon {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$PokemonImplToJson(this);
+    return _$$PokemonImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _Pokemon extends Pokemon {
-  const factory _Pokemon({
-    required final String name,
-    required final String url,
-    final PokemonDetail? details,
-  }) = _$PokemonImpl;
+  const factory _Pokemon(
+      {required final String name,
+      required final String url,
+      final PokemonDetail? details}) = _$PokemonImpl;
   const _Pokemon._() : super._();
 
   factory _Pokemon.fromJson(Map<String, dynamic> json) = _$PokemonImpl.fromJson;
@@ -251,9 +238,8 @@ mixin _$PokemonResponse {
 /// @nodoc
 abstract class $PokemonResponseCopyWith<$Res> {
   factory $PokemonResponseCopyWith(
-    PokemonResponse value,
-    $Res Function(PokemonResponse) then,
-  ) = _$PokemonResponseCopyWithImpl<$Res, PokemonResponse>;
+          PokemonResponse value, $Res Function(PokemonResponse) then) =
+      _$PokemonResponseCopyWithImpl<$Res, PokemonResponse>;
   @useResult
   $Res call({List<Pokemon> results, String? next, String? previous});
 }
@@ -277,36 +263,29 @@ class _$PokemonResponseCopyWithImpl<$Res, $Val extends PokemonResponse>
     Object? next = freezed,
     Object? previous = freezed,
   }) {
-    return _then(
-      _value.copyWith(
-            results:
-                null == results
-                    ? _value.results
-                    : results // ignore: cast_nullable_to_non_nullable
-                        as List<Pokemon>,
-            next:
-                freezed == next
-                    ? _value.next
-                    : next // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            previous:
-                freezed == previous
-                    ? _value.previous
-                    : previous // ignore: cast_nullable_to_non_nullable
-                        as String?,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      results: null == results
+          ? _value.results
+          : results // ignore: cast_nullable_to_non_nullable
+              as List<Pokemon>,
+      next: freezed == next
+          ? _value.next
+          : next // ignore: cast_nullable_to_non_nullable
+              as String?,
+      previous: freezed == previous
+          ? _value.previous
+          : previous // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ) as $Val);
   }
 }
 
 /// @nodoc
 abstract class _$$PokemonResponseImplCopyWith<$Res>
     implements $PokemonResponseCopyWith<$Res> {
-  factory _$$PokemonResponseImplCopyWith(
-    _$PokemonResponseImpl value,
-    $Res Function(_$PokemonResponseImpl) then,
-  ) = __$$PokemonResponseImplCopyWithImpl<$Res>;
+  factory _$$PokemonResponseImplCopyWith(_$PokemonResponseImpl value,
+          $Res Function(_$PokemonResponseImpl) then) =
+      __$$PokemonResponseImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({List<Pokemon> results, String? next, String? previous});
@@ -317,9 +296,8 @@ class __$$PokemonResponseImplCopyWithImpl<$Res>
     extends _$PokemonResponseCopyWithImpl<$Res, _$PokemonResponseImpl>
     implements _$$PokemonResponseImplCopyWith<$Res> {
   __$$PokemonResponseImplCopyWithImpl(
-    _$PokemonResponseImpl _value,
-    $Res Function(_$PokemonResponseImpl) _then,
-  ) : super(_value, _then);
+      _$PokemonResponseImpl _value, $Res Function(_$PokemonResponseImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of PokemonResponse
   /// with the given fields replaced by the non-null parameter values.
@@ -330,36 +308,29 @@ class __$$PokemonResponseImplCopyWithImpl<$Res>
     Object? next = freezed,
     Object? previous = freezed,
   }) {
-    return _then(
-      _$PokemonResponseImpl(
-        results:
-            null == results
-                ? _value._results
-                : results // ignore: cast_nullable_to_non_nullable
-                    as List<Pokemon>,
-        next:
-            freezed == next
-                ? _value.next
-                : next // ignore: cast_nullable_to_non_nullable
-                    as String?,
-        previous:
-            freezed == previous
-                ? _value.previous
-                : previous // ignore: cast_nullable_to_non_nullable
-                    as String?,
-      ),
-    );
+    return _then(_$PokemonResponseImpl(
+      results: null == results
+          ? _value._results
+          : results // ignore: cast_nullable_to_non_nullable
+              as List<Pokemon>,
+      next: freezed == next
+          ? _value.next
+          : next // ignore: cast_nullable_to_non_nullable
+              as String?,
+      previous: freezed == previous
+          ? _value.previous
+          : previous // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ));
   }
 }
 
 /// @nodoc
 @JsonSerializable()
 class _$PokemonResponseImpl implements _PokemonResponse {
-  const _$PokemonResponseImpl({
-    required final List<Pokemon> results,
-    this.next,
-    this.previous,
-  }) : _results = results;
+  const _$PokemonResponseImpl(
+      {required final List<Pokemon> results, this.next, this.previous})
+      : _results = results;
 
   factory _$PokemonResponseImpl.fromJson(Map<String, dynamic> json) =>
       _$$PokemonResponseImplFromJson(json);
@@ -395,12 +366,8 @@ class _$PokemonResponseImpl implements _PokemonResponse {
 
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  int get hashCode => Object.hash(
-    runtimeType,
-    const DeepCollectionEquality().hash(_results),
-    next,
-    previous,
-  );
+  int get hashCode => Object.hash(runtimeType,
+      const DeepCollectionEquality().hash(_results), next, previous);
 
   /// Create a copy of PokemonResponse
   /// with the given fields replaced by the non-null parameter values.
@@ -409,22 +376,21 @@ class _$PokemonResponseImpl implements _PokemonResponse {
   @pragma('vm:prefer-inline')
   _$$PokemonResponseImplCopyWith<_$PokemonResponseImpl> get copyWith =>
       __$$PokemonResponseImplCopyWithImpl<_$PokemonResponseImpl>(
-        this,
-        _$identity,
-      );
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$PokemonResponseImplToJson(this);
+    return _$$PokemonResponseImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _PokemonResponse implements PokemonResponse {
-  const factory _PokemonResponse({
-    required final List<Pokemon> results,
-    final String? next,
-    final String? previous,
-  }) = _$PokemonResponseImpl;
+  const factory _PokemonResponse(
+      {required final List<Pokemon> results,
+      final String? next,
+      final String? previous}) = _$PokemonResponseImpl;
 
   factory _PokemonResponse.fromJson(Map<String, dynamic> json) =
       _$PokemonResponseImpl.fromJson;

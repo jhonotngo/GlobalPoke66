@@ -12,8 +12,7 @@ part of 'pokemon_detail_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
-);
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 PokemonDetail _$PokemonDetailFromJson(Map<String, dynamic> json) {
   return _PokemonDetail.fromJson(json);
@@ -30,7 +29,8 @@ mixin _$PokemonDetail {
   @AbilityListConverter()
   List<PokemonAbility> get abilities => throw _privateConstructorUsedError;
   @StatsConverter()
-  PokemonStats get stats => throw _privateConstructorUsedError;
+  PokemonStats get stats =>
+      throw _privateConstructorUsedError; // ignore: invalid_annotation_target
   @JsonKey(name: 'sprites')
   @SpriteUrlConverter()
   String get imageUrl => throw _privateConstructorUsedError;
@@ -48,20 +48,18 @@ mixin _$PokemonDetail {
 /// @nodoc
 abstract class $PokemonDetailCopyWith<$Res> {
   factory $PokemonDetailCopyWith(
-    PokemonDetail value,
-    $Res Function(PokemonDetail) then,
-  ) = _$PokemonDetailCopyWithImpl<$Res, PokemonDetail>;
+          PokemonDetail value, $Res Function(PokemonDetail) then) =
+      _$PokemonDetailCopyWithImpl<$Res, PokemonDetail>;
   @useResult
-  $Res call({
-    int id,
-    String name,
-    int height,
-    int weight,
-    @TypeListConverter() List<PokemonType> types,
-    @AbilityListConverter() List<PokemonAbility> abilities,
-    @StatsConverter() PokemonStats stats,
-    @JsonKey(name: 'sprites') @SpriteUrlConverter() String imageUrl,
-  });
+  $Res call(
+      {int id,
+      String name,
+      int height,
+      int weight,
+      @TypeListConverter() List<PokemonType> types,
+      @AbilityListConverter() List<PokemonAbility> abilities,
+      @StatsConverter() PokemonStats stats,
+      @JsonKey(name: 'sprites') @SpriteUrlConverter() String imageUrl});
 
   $PokemonStatsCopyWith<$Res> get stats;
 }
@@ -90,51 +88,40 @@ class _$PokemonDetailCopyWithImpl<$Res, $Val extends PokemonDetail>
     Object? stats = null,
     Object? imageUrl = null,
   }) {
-    return _then(
-      _value.copyWith(
-            id:
-                null == id
-                    ? _value.id
-                    : id // ignore: cast_nullable_to_non_nullable
-                        as int,
-            name:
-                null == name
-                    ? _value.name
-                    : name // ignore: cast_nullable_to_non_nullable
-                        as String,
-            height:
-                null == height
-                    ? _value.height
-                    : height // ignore: cast_nullable_to_non_nullable
-                        as int,
-            weight:
-                null == weight
-                    ? _value.weight
-                    : weight // ignore: cast_nullable_to_non_nullable
-                        as int,
-            types:
-                null == types
-                    ? _value.types
-                    : types // ignore: cast_nullable_to_non_nullable
-                        as List<PokemonType>,
-            abilities:
-                null == abilities
-                    ? _value.abilities
-                    : abilities // ignore: cast_nullable_to_non_nullable
-                        as List<PokemonAbility>,
-            stats:
-                null == stats
-                    ? _value.stats
-                    : stats // ignore: cast_nullable_to_non_nullable
-                        as PokemonStats,
-            imageUrl:
-                null == imageUrl
-                    ? _value.imageUrl
-                    : imageUrl // ignore: cast_nullable_to_non_nullable
-                        as String,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      id: null == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as int,
+      name: null == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      height: null == height
+          ? _value.height
+          : height // ignore: cast_nullable_to_non_nullable
+              as int,
+      weight: null == weight
+          ? _value.weight
+          : weight // ignore: cast_nullable_to_non_nullable
+              as int,
+      types: null == types
+          ? _value.types
+          : types // ignore: cast_nullable_to_non_nullable
+              as List<PokemonType>,
+      abilities: null == abilities
+          ? _value.abilities
+          : abilities // ignore: cast_nullable_to_non_nullable
+              as List<PokemonAbility>,
+      stats: null == stats
+          ? _value.stats
+          : stats // ignore: cast_nullable_to_non_nullable
+              as PokemonStats,
+      imageUrl: null == imageUrl
+          ? _value.imageUrl
+          : imageUrl // ignore: cast_nullable_to_non_nullable
+              as String,
+    ) as $Val);
   }
 
   /// Create a copy of PokemonDetail
@@ -152,21 +139,19 @@ class _$PokemonDetailCopyWithImpl<$Res, $Val extends PokemonDetail>
 abstract class _$$PokemonDetailImplCopyWith<$Res>
     implements $PokemonDetailCopyWith<$Res> {
   factory _$$PokemonDetailImplCopyWith(
-    _$PokemonDetailImpl value,
-    $Res Function(_$PokemonDetailImpl) then,
-  ) = __$$PokemonDetailImplCopyWithImpl<$Res>;
+          _$PokemonDetailImpl value, $Res Function(_$PokemonDetailImpl) then) =
+      __$$PokemonDetailImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({
-    int id,
-    String name,
-    int height,
-    int weight,
-    @TypeListConverter() List<PokemonType> types,
-    @AbilityListConverter() List<PokemonAbility> abilities,
-    @StatsConverter() PokemonStats stats,
-    @JsonKey(name: 'sprites') @SpriteUrlConverter() String imageUrl,
-  });
+  $Res call(
+      {int id,
+      String name,
+      int height,
+      int weight,
+      @TypeListConverter() List<PokemonType> types,
+      @AbilityListConverter() List<PokemonAbility> abilities,
+      @StatsConverter() PokemonStats stats,
+      @JsonKey(name: 'sprites') @SpriteUrlConverter() String imageUrl});
 
   @override
   $PokemonStatsCopyWith<$Res> get stats;
@@ -177,9 +162,8 @@ class __$$PokemonDetailImplCopyWithImpl<$Res>
     extends _$PokemonDetailCopyWithImpl<$Res, _$PokemonDetailImpl>
     implements _$$PokemonDetailImplCopyWith<$Res> {
   __$$PokemonDetailImplCopyWithImpl(
-    _$PokemonDetailImpl _value,
-    $Res Function(_$PokemonDetailImpl) _then,
-  ) : super(_value, _then);
+      _$PokemonDetailImpl _value, $Res Function(_$PokemonDetailImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of PokemonDetail
   /// with the given fields replaced by the non-null parameter values.
@@ -195,67 +179,57 @@ class __$$PokemonDetailImplCopyWithImpl<$Res>
     Object? stats = null,
     Object? imageUrl = null,
   }) {
-    return _then(
-      _$PokemonDetailImpl(
-        id:
-            null == id
-                ? _value.id
-                : id // ignore: cast_nullable_to_non_nullable
-                    as int,
-        name:
-            null == name
-                ? _value.name
-                : name // ignore: cast_nullable_to_non_nullable
-                    as String,
-        height:
-            null == height
-                ? _value.height
-                : height // ignore: cast_nullable_to_non_nullable
-                    as int,
-        weight:
-            null == weight
-                ? _value.weight
-                : weight // ignore: cast_nullable_to_non_nullable
-                    as int,
-        types:
-            null == types
-                ? _value._types
-                : types // ignore: cast_nullable_to_non_nullable
-                    as List<PokemonType>,
-        abilities:
-            null == abilities
-                ? _value._abilities
-                : abilities // ignore: cast_nullable_to_non_nullable
-                    as List<PokemonAbility>,
-        stats:
-            null == stats
-                ? _value.stats
-                : stats // ignore: cast_nullable_to_non_nullable
-                    as PokemonStats,
-        imageUrl:
-            null == imageUrl
-                ? _value.imageUrl
-                : imageUrl // ignore: cast_nullable_to_non_nullable
-                    as String,
-      ),
-    );
+    return _then(_$PokemonDetailImpl(
+      id: null == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as int,
+      name: null == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      height: null == height
+          ? _value.height
+          : height // ignore: cast_nullable_to_non_nullable
+              as int,
+      weight: null == weight
+          ? _value.weight
+          : weight // ignore: cast_nullable_to_non_nullable
+              as int,
+      types: null == types
+          ? _value._types
+          : types // ignore: cast_nullable_to_non_nullable
+              as List<PokemonType>,
+      abilities: null == abilities
+          ? _value._abilities
+          : abilities // ignore: cast_nullable_to_non_nullable
+              as List<PokemonAbility>,
+      stats: null == stats
+          ? _value.stats
+          : stats // ignore: cast_nullable_to_non_nullable
+              as PokemonStats,
+      imageUrl: null == imageUrl
+          ? _value.imageUrl
+          : imageUrl // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
   }
 }
 
 /// @nodoc
 @JsonSerializable()
 class _$PokemonDetailImpl implements _PokemonDetail {
-  const _$PokemonDetailImpl({
-    required this.id,
-    required this.name,
-    required this.height,
-    required this.weight,
-    @TypeListConverter() required final List<PokemonType> types,
-    @AbilityListConverter() required final List<PokemonAbility> abilities,
-    @StatsConverter() required this.stats,
-    @JsonKey(name: 'sprites') @SpriteUrlConverter() required this.imageUrl,
-  }) : _types = types,
-       _abilities = abilities;
+  const _$PokemonDetailImpl(
+      {required this.id,
+      required this.name,
+      required this.height,
+      required this.weight,
+      @TypeListConverter() required final List<PokemonType> types,
+      @AbilityListConverter() required final List<PokemonAbility> abilities,
+      @StatsConverter() required this.stats,
+      @JsonKey(name: 'sprites') @SpriteUrlConverter() required this.imageUrl})
+      : _types = types,
+        _abilities = abilities;
 
   factory _$PokemonDetailImpl.fromJson(Map<String, dynamic> json) =>
       _$$PokemonDetailImplFromJson(json);
@@ -289,6 +263,7 @@ class _$PokemonDetailImpl implements _PokemonDetail {
   @override
   @StatsConverter()
   final PokemonStats stats;
+// ignore: invalid_annotation_target
   @override
   @JsonKey(name: 'sprites')
   @SpriteUrlConverter()
@@ -309,10 +284,8 @@ class _$PokemonDetailImpl implements _PokemonDetail {
             (identical(other.height, height) || other.height == height) &&
             (identical(other.weight, weight) || other.weight == weight) &&
             const DeepCollectionEquality().equals(other._types, _types) &&
-            const DeepCollectionEquality().equals(
-              other._abilities,
-              _abilities,
-            ) &&
+            const DeepCollectionEquality()
+                .equals(other._abilities, _abilities) &&
             (identical(other.stats, stats) || other.stats == stats) &&
             (identical(other.imageUrl, imageUrl) ||
                 other.imageUrl == imageUrl));
@@ -321,16 +294,15 @@ class _$PokemonDetailImpl implements _PokemonDetail {
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
-    runtimeType,
-    id,
-    name,
-    height,
-    weight,
-    const DeepCollectionEquality().hash(_types),
-    const DeepCollectionEquality().hash(_abilities),
-    stats,
-    imageUrl,
-  );
+      runtimeType,
+      id,
+      name,
+      height,
+      weight,
+      const DeepCollectionEquality().hash(_types),
+      const DeepCollectionEquality().hash(_abilities),
+      stats,
+      imageUrl);
 
   /// Create a copy of PokemonDetail
   /// with the given fields replaced by the non-null parameter values.
@@ -342,23 +314,24 @@ class _$PokemonDetailImpl implements _PokemonDetail {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$PokemonDetailImplToJson(this);
+    return _$$PokemonDetailImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _PokemonDetail implements PokemonDetail {
-  const factory _PokemonDetail({
-    required final int id,
-    required final String name,
-    required final int height,
-    required final int weight,
-    @TypeListConverter() required final List<PokemonType> types,
-    @AbilityListConverter() required final List<PokemonAbility> abilities,
-    @StatsConverter() required final PokemonStats stats,
-    @JsonKey(name: 'sprites')
-    @SpriteUrlConverter()
-    required final String imageUrl,
-  }) = _$PokemonDetailImpl;
+  const factory _PokemonDetail(
+      {required final int id,
+      required final String name,
+      required final int height,
+      required final int weight,
+      @TypeListConverter() required final List<PokemonType> types,
+      @AbilityListConverter() required final List<PokemonAbility> abilities,
+      @StatsConverter() required final PokemonStats stats,
+      @JsonKey(name: 'sprites')
+      @SpriteUrlConverter()
+      required final String imageUrl}) = _$PokemonDetailImpl;
 
   factory _PokemonDetail.fromJson(Map<String, dynamic> json) =
       _$PokemonDetailImpl.fromJson;
@@ -379,7 +352,7 @@ abstract class _PokemonDetail implements PokemonDetail {
   List<PokemonAbility> get abilities;
   @override
   @StatsConverter()
-  PokemonStats get stats;
+  PokemonStats get stats; // ignore: invalid_annotation_target
   @override
   @JsonKey(name: 'sprites')
   @SpriteUrlConverter()
@@ -414,9 +387,8 @@ mixin _$PokemonType {
 /// @nodoc
 abstract class $PokemonTypeCopyWith<$Res> {
   factory $PokemonTypeCopyWith(
-    PokemonType value,
-    $Res Function(PokemonType) then,
-  ) = _$PokemonTypeCopyWithImpl<$Res, PokemonType>;
+          PokemonType value, $Res Function(PokemonType) then) =
+      _$PokemonTypeCopyWithImpl<$Res, PokemonType>;
   @useResult
   $Res call({String name});
 }
@@ -435,17 +407,15 @@ class _$PokemonTypeCopyWithImpl<$Res, $Val extends PokemonType>
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? name = null}) {
-    return _then(
-      _value.copyWith(
-            name:
-                null == name
-                    ? _value.name
-                    : name // ignore: cast_nullable_to_non_nullable
-                        as String,
-          )
-          as $Val,
-    );
+  $Res call({
+    Object? name = null,
+  }) {
+    return _then(_value.copyWith(
+      name: null == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+    ) as $Val);
   }
 }
 
@@ -453,9 +423,8 @@ class _$PokemonTypeCopyWithImpl<$Res, $Val extends PokemonType>
 abstract class _$$PokemonTypeImplCopyWith<$Res>
     implements $PokemonTypeCopyWith<$Res> {
   factory _$$PokemonTypeImplCopyWith(
-    _$PokemonTypeImpl value,
-    $Res Function(_$PokemonTypeImpl) then,
-  ) = __$$PokemonTypeImplCopyWithImpl<$Res>;
+          _$PokemonTypeImpl value, $Res Function(_$PokemonTypeImpl) then) =
+      __$$PokemonTypeImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({String name});
@@ -466,24 +435,22 @@ class __$$PokemonTypeImplCopyWithImpl<$Res>
     extends _$PokemonTypeCopyWithImpl<$Res, _$PokemonTypeImpl>
     implements _$$PokemonTypeImplCopyWith<$Res> {
   __$$PokemonTypeImplCopyWithImpl(
-    _$PokemonTypeImpl _value,
-    $Res Function(_$PokemonTypeImpl) _then,
-  ) : super(_value, _then);
+      _$PokemonTypeImpl _value, $Res Function(_$PokemonTypeImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of PokemonType
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? name = null}) {
-    return _then(
-      _$PokemonTypeImpl(
-        name:
-            null == name
-                ? _value.name
-                : name // ignore: cast_nullable_to_non_nullable
-                    as String,
-      ),
-    );
+  $Res call({
+    Object? name = null,
+  }) {
+    return _then(_$PokemonTypeImpl(
+      name: null == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
   }
 }
 
@@ -525,7 +492,9 @@ class _$PokemonTypeImpl implements _PokemonType {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$PokemonTypeImplToJson(this);
+    return _$$PokemonTypeImplToJson(
+      this,
+    );
   }
 }
 
@@ -567,9 +536,8 @@ mixin _$PokemonAbility {
 /// @nodoc
 abstract class $PokemonAbilityCopyWith<$Res> {
   factory $PokemonAbilityCopyWith(
-    PokemonAbility value,
-    $Res Function(PokemonAbility) then,
-  ) = _$PokemonAbilityCopyWithImpl<$Res, PokemonAbility>;
+          PokemonAbility value, $Res Function(PokemonAbility) then) =
+      _$PokemonAbilityCopyWithImpl<$Res, PokemonAbility>;
   @useResult
   $Res call({String name});
 }
@@ -588,27 +556,24 @@ class _$PokemonAbilityCopyWithImpl<$Res, $Val extends PokemonAbility>
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? name = null}) {
-    return _then(
-      _value.copyWith(
-            name:
-                null == name
-                    ? _value.name
-                    : name // ignore: cast_nullable_to_non_nullable
-                        as String,
-          )
-          as $Val,
-    );
+  $Res call({
+    Object? name = null,
+  }) {
+    return _then(_value.copyWith(
+      name: null == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+    ) as $Val);
   }
 }
 
 /// @nodoc
 abstract class _$$PokemonAbilityImplCopyWith<$Res>
     implements $PokemonAbilityCopyWith<$Res> {
-  factory _$$PokemonAbilityImplCopyWith(
-    _$PokemonAbilityImpl value,
-    $Res Function(_$PokemonAbilityImpl) then,
-  ) = __$$PokemonAbilityImplCopyWithImpl<$Res>;
+  factory _$$PokemonAbilityImplCopyWith(_$PokemonAbilityImpl value,
+          $Res Function(_$PokemonAbilityImpl) then) =
+      __$$PokemonAbilityImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({String name});
@@ -619,24 +584,22 @@ class __$$PokemonAbilityImplCopyWithImpl<$Res>
     extends _$PokemonAbilityCopyWithImpl<$Res, _$PokemonAbilityImpl>
     implements _$$PokemonAbilityImplCopyWith<$Res> {
   __$$PokemonAbilityImplCopyWithImpl(
-    _$PokemonAbilityImpl _value,
-    $Res Function(_$PokemonAbilityImpl) _then,
-  ) : super(_value, _then);
+      _$PokemonAbilityImpl _value, $Res Function(_$PokemonAbilityImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of PokemonAbility
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? name = null}) {
-    return _then(
-      _$PokemonAbilityImpl(
-        name:
-            null == name
-                ? _value.name
-                : name // ignore: cast_nullable_to_non_nullable
-                    as String,
-      ),
-    );
+  $Res call({
+    Object? name = null,
+  }) {
+    return _then(_$PokemonAbilityImpl(
+      name: null == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
   }
 }
 
@@ -675,13 +638,13 @@ class _$PokemonAbilityImpl implements _PokemonAbility {
   @pragma('vm:prefer-inline')
   _$$PokemonAbilityImplCopyWith<_$PokemonAbilityImpl> get copyWith =>
       __$$PokemonAbilityImplCopyWithImpl<_$PokemonAbilityImpl>(
-        this,
-        _$identity,
-      );
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$PokemonAbilityImplToJson(this);
+    return _$$PokemonAbilityImplToJson(
+      this,
+    );
   }
 }
 
@@ -729,18 +692,16 @@ mixin _$PokemonStats {
 /// @nodoc
 abstract class $PokemonStatsCopyWith<$Res> {
   factory $PokemonStatsCopyWith(
-    PokemonStats value,
-    $Res Function(PokemonStats) then,
-  ) = _$PokemonStatsCopyWithImpl<$Res, PokemonStats>;
+          PokemonStats value, $Res Function(PokemonStats) then) =
+      _$PokemonStatsCopyWithImpl<$Res, PokemonStats>;
   @useResult
-  $Res call({
-    int hp,
-    int attack,
-    int defense,
-    int specialAttack,
-    int specialDefense,
-    int speed,
-  });
+  $Res call(
+      {int hp,
+      int attack,
+      int defense,
+      int specialAttack,
+      int specialDefense,
+      int speed});
 }
 
 /// @nodoc
@@ -765,41 +726,32 @@ class _$PokemonStatsCopyWithImpl<$Res, $Val extends PokemonStats>
     Object? specialDefense = null,
     Object? speed = null,
   }) {
-    return _then(
-      _value.copyWith(
-            hp:
-                null == hp
-                    ? _value.hp
-                    : hp // ignore: cast_nullable_to_non_nullable
-                        as int,
-            attack:
-                null == attack
-                    ? _value.attack
-                    : attack // ignore: cast_nullable_to_non_nullable
-                        as int,
-            defense:
-                null == defense
-                    ? _value.defense
-                    : defense // ignore: cast_nullable_to_non_nullable
-                        as int,
-            specialAttack:
-                null == specialAttack
-                    ? _value.specialAttack
-                    : specialAttack // ignore: cast_nullable_to_non_nullable
-                        as int,
-            specialDefense:
-                null == specialDefense
-                    ? _value.specialDefense
-                    : specialDefense // ignore: cast_nullable_to_non_nullable
-                        as int,
-            speed:
-                null == speed
-                    ? _value.speed
-                    : speed // ignore: cast_nullable_to_non_nullable
-                        as int,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      hp: null == hp
+          ? _value.hp
+          : hp // ignore: cast_nullable_to_non_nullable
+              as int,
+      attack: null == attack
+          ? _value.attack
+          : attack // ignore: cast_nullable_to_non_nullable
+              as int,
+      defense: null == defense
+          ? _value.defense
+          : defense // ignore: cast_nullable_to_non_nullable
+              as int,
+      specialAttack: null == specialAttack
+          ? _value.specialAttack
+          : specialAttack // ignore: cast_nullable_to_non_nullable
+              as int,
+      specialDefense: null == specialDefense
+          ? _value.specialDefense
+          : specialDefense // ignore: cast_nullable_to_non_nullable
+              as int,
+      speed: null == speed
+          ? _value.speed
+          : speed // ignore: cast_nullable_to_non_nullable
+              as int,
+    ) as $Val);
   }
 }
 
@@ -807,19 +759,17 @@ class _$PokemonStatsCopyWithImpl<$Res, $Val extends PokemonStats>
 abstract class _$$PokemonStatsImplCopyWith<$Res>
     implements $PokemonStatsCopyWith<$Res> {
   factory _$$PokemonStatsImplCopyWith(
-    _$PokemonStatsImpl value,
-    $Res Function(_$PokemonStatsImpl) then,
-  ) = __$$PokemonStatsImplCopyWithImpl<$Res>;
+          _$PokemonStatsImpl value, $Res Function(_$PokemonStatsImpl) then) =
+      __$$PokemonStatsImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({
-    int hp,
-    int attack,
-    int defense,
-    int specialAttack,
-    int specialDefense,
-    int speed,
-  });
+  $Res call(
+      {int hp,
+      int attack,
+      int defense,
+      int specialAttack,
+      int specialDefense,
+      int speed});
 }
 
 /// @nodoc
@@ -827,9 +777,8 @@ class __$$PokemonStatsImplCopyWithImpl<$Res>
     extends _$PokemonStatsCopyWithImpl<$Res, _$PokemonStatsImpl>
     implements _$$PokemonStatsImplCopyWith<$Res> {
   __$$PokemonStatsImplCopyWithImpl(
-    _$PokemonStatsImpl _value,
-    $Res Function(_$PokemonStatsImpl) _then,
-  ) : super(_value, _then);
+      _$PokemonStatsImpl _value, $Res Function(_$PokemonStatsImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of PokemonStats
   /// with the given fields replaced by the non-null parameter values.
@@ -843,54 +792,46 @@ class __$$PokemonStatsImplCopyWithImpl<$Res>
     Object? specialDefense = null,
     Object? speed = null,
   }) {
-    return _then(
-      _$PokemonStatsImpl(
-        hp:
-            null == hp
-                ? _value.hp
-                : hp // ignore: cast_nullable_to_non_nullable
-                    as int,
-        attack:
-            null == attack
-                ? _value.attack
-                : attack // ignore: cast_nullable_to_non_nullable
-                    as int,
-        defense:
-            null == defense
-                ? _value.defense
-                : defense // ignore: cast_nullable_to_non_nullable
-                    as int,
-        specialAttack:
-            null == specialAttack
-                ? _value.specialAttack
-                : specialAttack // ignore: cast_nullable_to_non_nullable
-                    as int,
-        specialDefense:
-            null == specialDefense
-                ? _value.specialDefense
-                : specialDefense // ignore: cast_nullable_to_non_nullable
-                    as int,
-        speed:
-            null == speed
-                ? _value.speed
-                : speed // ignore: cast_nullable_to_non_nullable
-                    as int,
-      ),
-    );
+    return _then(_$PokemonStatsImpl(
+      hp: null == hp
+          ? _value.hp
+          : hp // ignore: cast_nullable_to_non_nullable
+              as int,
+      attack: null == attack
+          ? _value.attack
+          : attack // ignore: cast_nullable_to_non_nullable
+              as int,
+      defense: null == defense
+          ? _value.defense
+          : defense // ignore: cast_nullable_to_non_nullable
+              as int,
+      specialAttack: null == specialAttack
+          ? _value.specialAttack
+          : specialAttack // ignore: cast_nullable_to_non_nullable
+              as int,
+      specialDefense: null == specialDefense
+          ? _value.specialDefense
+          : specialDefense // ignore: cast_nullable_to_non_nullable
+              as int,
+      speed: null == speed
+          ? _value.speed
+          : speed // ignore: cast_nullable_to_non_nullable
+              as int,
+    ));
   }
 }
 
 /// @nodoc
 @JsonSerializable()
 class _$PokemonStatsImpl extends _PokemonStats {
-  const _$PokemonStatsImpl({
-    required this.hp,
-    required this.attack,
-    required this.defense,
-    required this.specialAttack,
-    required this.specialDefense,
-    required this.speed,
-  }) : super._();
+  const _$PokemonStatsImpl(
+      {required this.hp,
+      required this.attack,
+      required this.defense,
+      required this.specialAttack,
+      required this.specialDefense,
+      required this.speed})
+      : super._();
 
   factory _$PokemonStatsImpl.fromJson(Map<String, dynamic> json) =>
       _$$PokemonStatsImplFromJson(json);
@@ -931,14 +872,7 @@ class _$PokemonStatsImpl extends _PokemonStats {
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
-    runtimeType,
-    hp,
-    attack,
-    defense,
-    specialAttack,
-    specialDefense,
-    speed,
-  );
+      runtimeType, hp, attack, defense, specialAttack, specialDefense, speed);
 
   /// Create a copy of PokemonStats
   /// with the given fields replaced by the non-null parameter values.
@@ -950,19 +884,20 @@ class _$PokemonStatsImpl extends _PokemonStats {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$PokemonStatsImplToJson(this);
+    return _$$PokemonStatsImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _PokemonStats extends PokemonStats {
-  const factory _PokemonStats({
-    required final int hp,
-    required final int attack,
-    required final int defense,
-    required final int specialAttack,
-    required final int specialDefense,
-    required final int speed,
-  }) = _$PokemonStatsImpl;
+  const factory _PokemonStats(
+      {required final int hp,
+      required final int attack,
+      required final int defense,
+      required final int specialAttack,
+      required final int specialDefense,
+      required final int speed}) = _$PokemonStatsImpl;
   const _PokemonStats._() : super._();
 
   factory _PokemonStats.fromJson(Map<String, dynamic> json) =
