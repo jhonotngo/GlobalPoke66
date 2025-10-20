@@ -1,0 +1,73 @@
+{
+    "app": {
+        "title": "PokéDex",
+        "subtitle": "¡Hazte con todos!"
+    },
+    "onboarding": {
+        "next": "Continuar",
+        "get_started": "Empecemos",
+        "page1_title": "Todos los Pokémon en un solo lugar",
+        "page1_description": "Accede a una amplia lista de Pokémon de todas las generaciones creadas por Nintendo",
+        "page2_title": "Mantén tu Pokédex actualizada",
+        "page2_description": "Regístrate y guarda tu perfil, Pokémon favoritos, configuraciones y mucho más en la aplicación"
+    },
+    "navigation": {
+        "pokedex": "Pokedex",
+        "favorites": "Favoritos",
+        "regions": "Regiones",
+        "profile": "Perfil"
+    },
+    "pokemon_list": {
+        "error_title": "Algo salió mal...",
+        "error_description": "No pudimos cargar la información en este momento. Verifica tu conexión o intenta nuevamente mas tarde.",
+        "retry": "Reintentar",
+        "found": "Se han encontrado ",
+        "results": "resultados ",
+        "clean_filter": "Borrar filtro",
+        "search": "Procurar Pokémon..."
+    },
+    "pokemon_detail": {
+        "height": "Altura",
+        "weight": "Peso",
+        "abilities": "Habilidades",
+        "base_stats": "Estadísticas Base",
+        "hp": "PS",
+        "attack": "Ataque",
+        "defense": "Defensa",
+        "sp_attack": "At. esp.",
+        "sp_defense": "Def. esp.",
+        "speed": "Velocidad"
+    },
+    "favorites": {
+        "title": "Favoritos",
+        "no_favorites": "No has marcado ningún Pokémon como favorito",
+        "add_favorites": "Haz clic en el ícono de corazón de tus Pokémon favoritos y aparecerán aquí."
+    },
+    "regions": {
+        "title": "¡Muy pronto disponible!",
+        "description": "Estamos trabajando para traerte esta sección. Vuelve más adelante para descubrir todas las novedades."
+    },
+    "settings": {
+        "language": "Idioma"
+    },
+    "pokemon_types": {
+        "normal": "Normal",
+        "fire": "Fuego",
+        "water": "Agua",
+        "grass": "Planta",
+        "electric": "Eléctrico",
+        "ice": "Hielo",
+        "fighting": "Lucha",
+        "poison": "Veneno",
+        "ground": "Tierra",
+        "flying": "Volador",
+        "psychic": "Psíquico",
+        "bug": "Bicho",
+        "rock": "Roca",
+        "ghost": "Fantasma",
+        "dragon": "Dragón",
+        "dark": "Siniestro",
+        "steel": "Acero",
+        "fairy": "Hada"
+    }
+}

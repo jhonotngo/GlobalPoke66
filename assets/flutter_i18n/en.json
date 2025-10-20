@@ -1,0 +1,73 @@
+{
+    "app": {
+        "title": "PokéDex",
+        "subtitle": "Gotta Catch 'Em All!"
+    },
+    "onboarding": {
+        "next": "Continue",
+        "get_started": "Get Started",
+        "page1_title": "Discover Pokémon",
+        "page1_description": "Explore the complete Pokédex with detailed information about every Pokémon from all generations.",
+        "page2_title": "Track Your Favorites",
+        "page2_description": "Save your favorite Pokémon and build your dream team. Access them quickly anytime!"
+    },
+    "navigation": {
+        "pokedex": "Pokedex",
+        "favorites": "Favorites",
+        "regions": "Regions",
+        "profile": "Profile"
+    },
+    "pokemon_list": {
+        "error_title": "Something went wrong...",
+        "error_description": "We were unable to load the data at this time. Please check your connection or try again later.",
+        "retry": "Retry",
+        "found": " found ",
+        "results": " results",
+        "clean_filter": "Clean filter",
+        "search": "Find Pokemon..."
+    },
+    "pokemon_detail": {
+        "height": "Height",
+        "weight": "Weight",
+        "abilities": "Abilities",
+        "base_stats": "Base Stats",
+        "hp": "HP",
+        "attack": "Attack",
+        "defense": "Defense",
+        "sp_attack": "Sp. Atk",
+        "sp_defense": "Sp. Def",
+        "speed": "Speed"
+    },
+    "favorites": {
+        "title": "Favorites",
+        "no_favorites": "You have not selected any Pokemon as favorites",
+        "add_favorites": "Click the heart icon of your favorite Pokémon and they'll appear here."
+    },
+    "regions": {
+        "title": "Coming soon!",
+        "description": "We're working to bring you this section. Check back later for all the latest updates."
+    },
+    "settings": {
+        "language": "Language"
+    },
+    "pokemon_types": {
+        "normal": "Normal",
+        "fire": "Fire",
+        "water": "Water",
+        "grass": "Grass",
+        "electric": "Electric",
+        "ice": "Ice",
+        "fighting": "Fighting",
+        "poison": "Poison",
+        "ground": "Ground",
+        "flying": "Flying",
+        "psychic": "Psychic",
+        "bug": "Bug",
+        "rock": "Rock",
+        "ghost": "Ghost",
+        "dragon": "Dragon",
+        "dark": "Dark",
+        "steel": "Steel",
+        "fairy": "Fairy"
+    }
+}
