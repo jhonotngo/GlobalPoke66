@@ -11,6 +11,8 @@ sh flutterinit.sh
 
 Esto debe ser suficiente, en caso de tener problemas con ese script se puede inicializar todo de forma manual de la siguiente manera
 
+# Ejecución manual
+
 ### **Limpiar proyecto**
 flutter clean
 flutter pub get
