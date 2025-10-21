@@ -37,4 +37,7 @@ flutter pub run build_runner build --delete-conflicting-outputs
 echo analyze code...
 flutter analyze
 
+echo test
+flutter test
+
 echo DONE!

@@ -24,7 +24,8 @@
         "found": "Se han encontrado ",
         "results": "resultados ",
         "clean_filter": "Borrar filtro",
-        "search": "Procurar Pokémon..."
+        "search": "Procurar Pokémon...",
+        "poke_not_found": "Pokémon no encontrado"
     },
     "pokemon_detail": {
         "height": "Altura",

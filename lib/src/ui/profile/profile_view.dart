@@ -11,7 +11,7 @@ class Profile extends StatefulWidget {
 }
 
 class _SettingsState extends State<Profile> {
-  String _currentLanguage = 'en';
+  String _currentLanguage = 'es';
 
   @override
   void initState() {
@@ -22,7 +22,7 @@ class _SettingsState extends State<Profile> {
   Future<void> _loadLanguage() async {
     final prefs = await SharedPreferences.getInstance();
     setState(() {
-      _currentLanguage = prefs.getString('language') ?? 'en';
+      _currentLanguage = prefs.getString('language') ?? 'es';
     });
   }
 

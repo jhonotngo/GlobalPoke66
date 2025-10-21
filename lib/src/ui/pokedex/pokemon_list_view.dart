@@ -90,7 +90,9 @@ class _PokemonListScreenState extends ConsumerState<PokemonList> {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text('Pokémon not found'),
+            content: Text(
+              FlutterI18n.translate(context, "pokemon_list.poke_not_found"),
+            ),
             backgroundColor: Colors.red,
             duration: Duration(seconds: 2),
           ),

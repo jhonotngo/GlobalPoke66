@@ -24,7 +24,8 @@
         "found": " found ",
         "results": " results",
         "clean_filter": "Clean filter",
-        "search": "Find Pokemon..."
+        "search": "Find Pokemon...",
+        "poke_not_found": "Pokemon not found"
     },
     "pokemon_detail": {
         "height": "Height",
