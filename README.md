@@ -1,15 +1,15 @@
 # Global66
 
-Este proyecto es una prueba técnica para puesto frontend de global66
+Este proyecto es una prueba técnica para puesto frontend de global66.
 
 # Ejecución del proyecto
 
-Dentro del proyecto tenemos un script llamado "flutterinit.sh", el cual podemos ejecutar de la siguiente manera
+Dentro del proyecto tenemos un script llamado "flutterinit.sh", el cual podemos ejecutar de la siguiente manera:
 
 ### **Llamada Script**
 sh flutterinit.sh
 
-Esto debe ser suficiente, en caso de tener problemas con ese script se puede inicializar todo de forma manual de la siguiente manera
+Esto debe ser suficiente, en caso de tener problemas con ese script se puede inicializar todo de forma manual de la siguiente manera:
 
 # Ejecución manual
 
@@ -111,6 +111,8 @@ Podemos decir que la seguridad realmente es baja, pero para un proyecto con dato
 ## Comentarios
 
 La única vista no desarrollada fue la del perfil, en los documentos de figma no había nada relacionada a ella, ni existían muchos datos relevantes para colocar en allí, como se integró la internacionalización en el proyecto,  en ella se colocó la opción para el cambio de idioma para aprovecharla de alguna forma.
+
+La verdad por el diseño en figma no entendí muy bien como hacer aparecer el filtro, asi que agregue un botón más y deje el botón con lupa para activar el buscador.
 
 versiones utilizadas:
 
