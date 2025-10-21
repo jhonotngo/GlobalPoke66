@@ -42,7 +42,7 @@ Tenemos un proyecto que tiene como patrones prinicpales Clean Architecture + BLo
 
 ## 📁 Estructura por Capas
 
-### **Presentation Layer (UI)**
+### **Capa de presentación (UI)**
 ```
 src/
 ├── bloc/
