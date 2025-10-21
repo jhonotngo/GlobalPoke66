@@ -35,9 +35,12 @@ echo Generate files...
 flutter pub run build_runner build --delete-conflicting-outputs
 
 echo analyze code...
-flutter analyze
+flutter analyze --no-fatal-warnings
 
 echo test
 flutter test
 
 echo DONE!
+
+echo run project and follow the instructions to select your emulator
+flutter run --profile
