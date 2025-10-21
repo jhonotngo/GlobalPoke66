@@ -42,7 +42,7 @@ Tenemos un proyecto que tiene como patrones prinicpales Clean Architecture + BLo
 
 ## 📁 Estructura por Capas
 
-### **Capa de presentación (UI)**
+### **Presentación de archivos (UI)**
 ```
 src/
 ├── bloc/
@@ -65,6 +65,7 @@ src/
 ```
 Se busco mantener una estructura de los archivos organizadas según las 4 opciones que se tienen en el navigation bottom bar (pokedex, regiones, favoritos, perfil)
 
+### **State Management (Híbrido)**
 
 **BLoC Pattern:**
 
