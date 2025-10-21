@@ -2,37 +2,35 @@
 
 Este proyecto es una prueba técnica para puesto frontend de global66
 
-## Ejecución del proyecto
+# Ejecución del proyecto
 
-Dentro del proyecto tenemos un script llamado "flutterinit.sh",
-el cual podemos ejecutar de la siguiente manera
+Dentro del proyecto tenemos un script llamado "flutterinit.sh", el cual podemos ejecutar de la siguiente manera
 
-# Llamada Script
+**Llamada Script**
 sh flutterinit.sh
 
-esto debe ser suficiente, en caso de tener problemas con ese script
-se puede inicializar todo de forma manual de la siguiente manera
+esto debe ser suficiente, en caso de tener problemas con ese script se puede inicializar todo de forma manual de la siguiente manera
 
-# Limpiar proyecto
+**Limpiar proyecto**
 flutter clean
 flutter pub get
 
-# Generar código en watch mode (desarrollo)
+**Generar código en watch mode (desarrollo)**
 flutter pub run build_runner watch --delete-conflicting-outputs
 
-# Analizar código
+**Analizar código**
 flutter analyze
 
-# Ejecutar tests
+**Ejecutar tests**
 flutter test
 
-# Build para Android
+**Build para Android**
 flutter build apk --release
 
-# Build para iOS
+**Build para iOS**
 flutter build ios --release
 
-# Ejecución en dispositivo
+**Ejecución en dispositivo**
 flutter run
 
 
