@@ -111,3 +111,10 @@ Podemos decir que la seguridad realmente es baja, pero para un proyecto con dato
 ## Comentarios
 
 La única vista no desarrollada fue la del perfil, en los documentos de figma no había nada relacionada a ella, ni existían muchos datos relevantes para colocar en allí, como se integró la internacionalización en el proyecto,  en ella se colocó la opción para el cambio de idioma para aprovecharla de alguna forma.
+
+versiones utilizadas:
+
+Flutter 3.29.0 • channel stable • https://github.com/flutter/flutter.git
+Framework • revision 35c388afb5 (8 months ago) • 2025-02-10 12:48:41 -0800
+Engine • revision f73bfc4522
+Tools • Dart 3.7.0 • DevTools 2.42.2
