@@ -1,4 +1,4 @@
-# global66
+# Global66
 
 Este proyecto es una prueba técnica para puesto frontend de global66
 
