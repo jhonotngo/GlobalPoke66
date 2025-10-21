@@ -112,7 +112,7 @@ Podemos decir que la seguridad realmente es baja, pero para un proyecto con dato
 
 La única vista no desarrollada fue la del perfil, en los documentos de figma no había nada relacionada a ella, ni existían muchos datos relevantes para colocar en allí, como se integró la internacionalización en el proyecto,  en ella se colocó la opción para el cambio de idioma para aprovecharla de alguna forma.
 
-La verdad por el diseño en figma no entendí muy bien como hacer aparecer el filtro, asi que agregue un botón más y deje el botón con lupa para activar el buscador.
+La verdad por el diseño en figma no entendí muy bien como hacer aparecer el filtro, así que agregue un botón más y deje el botón con lupa para activar el buscador.
 
 versiones utilizadas:
 
