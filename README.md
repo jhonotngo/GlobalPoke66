@@ -97,7 +97,7 @@ Tengo poco contacto con riverpod con anotaciones y comencé el proyecto usando r
 
 - How to use "freezed" in a flutter project?
 
-No tengo tanto conocimiento sobre freezed, lo utilice en un proyecto hace algún tiempo pero ya estaba implementado, nunca me había tocado implementarlo desde 0
+No tengo tanto conocimiento sobre freezed, lo utilice en un proyecto hace algún tiempo pero ya estaba implementado, nunca me había tocado implementarlo desde 0.
 
 ## Seguridad
 
