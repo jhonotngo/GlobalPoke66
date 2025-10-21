@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:global66/src/constants/font_size.dart';
 
 class ImageWithDescription extends StatelessWidget {
   const ImageWithDescription({
@@ -28,7 +29,7 @@ class ImageWithDescription extends StatelessWidget {
           Text(
             title,
             style: TextStyle(
-              fontSize: 20,
+              fontSize: kDescriptionTitle,
               fontWeight: FontWeight.bold,
               color: Colors.grey.shade900,
             ),
@@ -37,7 +38,7 @@ class ImageWithDescription extends StatelessWidget {
           Text(
             description,
             style: TextStyle(
-              fontSize: 16,
+              fontSize: kDescriptionInfo,
               color: Colors.grey.shade600,
               height: 1.5,
             ),

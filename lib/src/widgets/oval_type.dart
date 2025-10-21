@@ -58,7 +58,7 @@ class OvalType extends StatelessWidget {
                       "pokemon_types.${pokemonType.name}",
                     ),
                     style: TextStyle(
-                      fontSize: kPokemonNumber,
+                      fontSize: kOvalTypeName,
                       fontWeight: FontWeight.w500,
                       color: Colors.white,
                     ),

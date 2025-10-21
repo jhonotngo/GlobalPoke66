@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_i18n/flutter_i18n.dart';
 import 'package:global66/src/constants/color.dart';
+import 'package:global66/src/constants/font_size.dart';
 import 'package:global66/src/widgets/enum_values.dart';
 
 class TypesBottomModal extends StatefulWidget {
@@ -54,7 +55,10 @@ class _PokemonFilterModalState extends State<TypesBottomModal> {
                     context,
                     'widgets.filter_type_bottom_modal.title',
                   ),
-                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                  style: TextStyle(
+                    fontSize: kFilterTitle,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
               ),
             ],
@@ -86,7 +90,7 @@ class _PokemonFilterModalState extends State<TypesBottomModal> {
                                     'widgets.filter_type_bottom_modal.type',
                                   ),
                                   style: TextStyle(
-                                    fontSize: 16,
+                                    fontSize: kFilterTypeText,
                                     fontWeight: FontWeight.w600,
                                   ),
                                 ),
@@ -120,8 +124,8 @@ class _PokemonFilterModalState extends State<TypesBottomModal> {
                           ]);
                         }
                         pokemonTypeEnumValues.sort(
-                          (a, b) => (a[0].toLowerCase().compareTo(
-                            b[0].toLowerCase(),
+                          (a, b) => (a[1].toLowerCase().compareTo(
+                            b[1].toLowerCase(),
                           )),
                         );
 
@@ -183,7 +187,7 @@ class _PokemonFilterModalState extends State<TypesBottomModal> {
                         'widgets.filter_type_bottom_modal.apply',
                       ),
                       style: TextStyle(
-                        fontSize: 16,
+                        fontSize: kFilterApplyButton,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
@@ -213,7 +217,7 @@ class _PokemonFilterModalState extends State<TypesBottomModal> {
                         'widgets.filter_type_bottom_modal.cancel',
                       ),
                       style: TextStyle(
-                        fontSize: 16,
+                        fontSize: kFilterCancelButton,
                         fontWeight: FontWeight.bold,
                         color: Colors.black87,
                       ),

@@ -138,7 +138,7 @@ class PokemonDetailV extends ConsumerWidget {
                     Text(
                       pokemon.name[0].toUpperCase() + pokemon.name.substring(1),
                       style: const TextStyle(
-                        fontSize: 32,
+                        fontSize: kPokemonNameDetail,
                         fontWeight: FontWeight.bold,
                         color: Colors.black87,
                       ),
@@ -162,7 +162,7 @@ class PokemonDetailV extends ConsumerWidget {
                         'pokemon_detail.base_stats',
                       ),
                       style: TextStyle(
-                        fontSize: 20,
+                        fontSize: kPokemonStatTitle,
                         fontWeight: FontWeight.bold,
                         color: Colors.black87,
                       ),
@@ -243,7 +243,7 @@ class PokemonDetailV extends ConsumerWidget {
                               'pokemon_detail.abilities',
                             ),
                             style: TextStyle(
-                              fontSize: 20,
+                              fontSize: kPokemonAbilitiesTitle,
                               fontWeight: FontWeight.bold,
                             ),
                           ),
@@ -284,7 +284,7 @@ class PokemonDetailV extends ConsumerWidget {
             child: Text(
               label,
               style: const TextStyle(
-                fontSize: 14,
+                fontSize: kPokemonStatBarLabel,
                 fontWeight: FontWeight.w500,
                 color: Colors.black,
               ),
@@ -295,7 +295,7 @@ class PokemonDetailV extends ConsumerWidget {
             child: Text(
               value.toString(),
               style: const TextStyle(
-                fontSize: 14,
+                fontSize: kPokemonStatBarNumber,
                 fontWeight: FontWeight.bold,
                 color: Colors.black87,
               ),
@@ -334,7 +334,10 @@ class PokemonDetailV extends ConsumerWidget {
       children: [
         Text(
           label,
-          style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500),
+          style: TextStyle(
+            fontSize: kPokemonDetailInfoCardLabel,
+            fontWeight: FontWeight.w500,
+          ),
         ),
         Container(
           width: MediaQuery.of(context).size.width * 0.40,
@@ -347,7 +350,7 @@ class PokemonDetailV extends ConsumerWidget {
             child: Text(
               value,
               style: TextStyle(
-                fontSize: 18,
+                fontSize: kPokemonDetailInfoCardValue,
                 fontWeight: FontWeight.bold,
                 color: Colors.black,
               ),

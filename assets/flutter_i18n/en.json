@@ -22,7 +22,7 @@
         "error_description": "We were unable to load the data at this time. Please check your connection or try again later.",
         "retry": "Retry",
         "found": " found ",
-        "results": " results",
+        "results": "results",
         "clean_filter": "Clean filter",
         "search": "Find Pokemon...",
         "poke_not_found": "Pokemon not found"

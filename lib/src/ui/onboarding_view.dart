@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_i18n/flutter_i18n.dart';
 import 'package:global66/src/constants/color.dart';
+import 'package:global66/src/constants/font_size.dart';
 import 'package:global66/src/ui/nav_view.dart';
 import 'package:global66/src/widgets/image_with_description.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
@@ -129,7 +130,10 @@ class _OnboardingScreenState extends State<Onboarding> {
                           "onboarding.get_started",
                         )
                         : FlutterI18n.translate(context, "onboarding.next"),
-                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                    style: TextStyle(
+                      fontSize: kOnboardingButtonText,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 ),
               ),

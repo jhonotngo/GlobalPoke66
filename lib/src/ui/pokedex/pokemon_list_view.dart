@@ -254,7 +254,7 @@ class _PokemonListScreenState extends ConsumerState<PokemonList> {
                           '${_selectedTypeFilters.length}',
                           style: TextStyle(
                             color: Colors.white,
-                            fontSize: 10,
+                            fontSize: kFilterSelectedQuantity,
                             fontWeight: FontWeight.bold,
                           ),
                           textAlign: TextAlign.center,
@@ -339,7 +339,7 @@ class _PokemonListScreenState extends ConsumerState<PokemonList> {
                               "pokemon_list.retry",
                             ),
                             style: TextStyle(
-                              fontSize: 18,
+                              fontSize: kPokemonListRetry,
                               fontWeight: FontWeight.bold,
                             ),
                           ),
@@ -443,6 +443,7 @@ class _PokemonListScreenState extends ConsumerState<PokemonList> {
                       ),
                     ),
                     if (filterPokemons.isEmpty && _searchQuery.isNotEmpty)
+                      // No deberia pasar
                       SliverFillRemaining(
                         child: Center(
                           child: Column(
