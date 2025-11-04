@@ -40,6 +40,9 @@ flutter run
 
 Tenemos un proyecto que tiene como patrones prinicpales Clean Architecture + BLoC/Riverpod
 
+Si bien el uso de BLoC y Riverpod al mismo tiempo puede causar confusión a la hora de un proyecto real solo se esta haciendo el uso de ambos para demostrar el uso de ellos, pero es bien sabido que lo mejor es solo estar apegado a un solo enfoque.
+
+
 ## 📁 Estructura por Capas
 
 ### **Presentación de archivos (UI)**
